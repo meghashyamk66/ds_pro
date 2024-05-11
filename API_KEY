@@ -1,12 +1,8 @@
-
-import os
+# Import the API key from the configuration file
+from config import OPENAI_API_KEY
 import openai
 
-# Retrieve API key from environment variable
-openai_api_key = os.getenv("sk-proj-S7piEZekZB6tV3HwX3PyT3BlbkFJXKyL83AsTULcRxCJsgug")
-
 # Set OpenAI API key
-openai.api_key = openai_api_key
+openai.api_key = OPENAI_API_KEY
 
 # Now you can use the OpenAI API in your Streamlit app
-
