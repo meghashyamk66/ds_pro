@@ -1,1 +1,1 @@
-pip install openai
+pip3 install openai streamlit yfinance
