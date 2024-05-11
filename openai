@@ -1,0 +1,13 @@
+import subprocess
+
+# Function to install 'openai' package using pip
+def install_openai():
+    try:
+        # Execute pip install command
+        subprocess.check_call(['pip', 'install', 'openai'])
+        print("OpenAI package installed successfully.")
+    except subprocess.CalledProcessError as e:
+        print("Error installing OpenAI package:", e)
+
+# Call the install_openai function to install the package
+install_openai()
