@@ -1,1 +1,12 @@
-sk-proj-DVQft5BM0JpHoWW7Zs06T3BlbkFJ9HziUl525KZr7oOh60im
+
+import os
+import openai
+
+# Retrieve API key from environment variable
+openai_api_key = os.getenv("sk-proj-S7piEZekZB6tV3HwX3PyT3BlbkFJXKyL83AsTULcRxCJsgug")
+
+# Set OpenAI API key
+openai.api_key = openai_api_key
+
+# Now you can use the OpenAI API in your Streamlit app
+
